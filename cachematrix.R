@@ -1,14 +1,14 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 ## This function creates a special "matrix" object that can cache its inverse.
+## it  is  a list containing  functions 
 
-## Write a short comment describing this function
-## which is  a list containing a function to
-
-    # set the value of the matrix: set <- function(y) 
-    # get the value of the matrix: get <- function() x
-    # set the value of the inverse of the matrix: setinverse
-    # get the value of the inverse of the matrix: getinverse
+    # set <- function(y) : set the value of the matrix 
+    # get <- function() x : get the value of the matrix
+    # setsolve            : set the value of the inverse of the matrix
+    # getsolve            : get the value of the inverse of the matrix 
+##
+##
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -41,7 +41,7 @@ cacheSolve <- function(x, ...) {
         m
 }
 
-#examples
+## examples
 # A<- matrix (c(1,2,3,4),nrow=2,byrow=TRUE)
 #A
 #      [,1] [,2]
